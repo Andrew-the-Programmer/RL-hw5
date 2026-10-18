@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "RL w5 hw"
+version = "0.0.0"
+description = "venv for hw"
+authors = ["AndrewCh <andrey.chikin1223@gmail.com>"]
+license = "MIT"
+readme = "results/report.md"
+
+[tool.poetry.dependencies]
+python = "^3.14"
+gymnasium = { version = ">=1.2,<2", extras = ["classic-control"] }
+numpy = ">=1.26,<3"
+torch = ">=2.2,<3"
+matplotlib = ">=3.8,<4"
+imageio = ">=2.34,<3"
+imageio-ffmpeg = ">=0.5,<1"
+
+[tool.poetry.group.dev.dependencies]
+basedpyright = "^1.39.10"
+black = "^26.5.1"
+isort = "^8.0.1"
+
+[tool.black]
+line-length = 80
+target-version = ['py314']
+
+[tool.isort]
+profile = "black"
+
+[tool.basedpyright]
