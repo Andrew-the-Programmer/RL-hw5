@@ -3,8 +3,10 @@ from pathlib import Path
 import gymnasium as gym
 import imageio
 import numpy as np
+import torch
 
 
+@torch.inference_mode()
 def evaluate_agent(agent, episodes: int = 20, seed: int = 123):
     env = gym.make("MountainCar-v0")
 

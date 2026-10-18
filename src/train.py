@@ -9,9 +9,7 @@ from src.agent import DQNAgent
 
 
 def shaped_reward(reward, state, new_state, gamma):
-    return reward + 300 * (
-        gamma * abs(new_state[1]) - abs(state[1])
-    )
+    return reward + 300 * (gamma * abs(new_state[1]) - abs(state[1]))
 
 
 def train(
@@ -50,14 +48,14 @@ def train(
                 agent.gamma,
             )
 
-            done = terminated
+            done = terminated or truncated
 
             agent.remember(
                 state,
                 action,
                 reward,
                 new_state,
-                done,
+                terminated,
             )
 
             loss = agent.learn()
@@ -71,9 +69,7 @@ def train(
 
         rewards_history.append(float(episode_reward))
         losses_history.append(
-            float(np.mean(episode_losses))
-            if episode_losses
-            else np.nan
+            float(np.mean(episode_losses)) if episode_losses else np.nan
         )
         epsilon_history.append(float(agent.epsilon))
 

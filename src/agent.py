@@ -1,5 +1,5 @@
-from pathlib import Path
 import random
+from pathlib import Path
 
 import numpy as np
 import torch
@@ -104,7 +104,7 @@ class DQNAgent:
         current_q = self.online_net(states).gather(1, actions).squeeze(1)
 
         next_q = self.target_net(next_states).max(dim=1).values
-        targets = rewards + self.gamma * next_q * dones
+        targets = rewards + self.gamma * next_q * (1 - dones)
 
         loss = F.smooth_l1_loss(current_q, targets)
 
@@ -114,9 +114,8 @@ class DQNAgent:
 
         self.learn_steps += 1
 
-        self.target_net.load_state_dict(
-            self.online_net.state_dict()
-        )
+        if self.learn_steps % self.target_update_freq == 0:
+            _ = self.target_net.load_state_dict(self.online_net.state_dict())
 
         return float(loss.item())
 
