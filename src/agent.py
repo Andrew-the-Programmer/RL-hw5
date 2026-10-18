@@ -29,6 +29,8 @@ class DQNAgent:
         self.online_net = online_net.to(self.device)
         self.target_net = target_net.to(self.device)
 
+        _ = self.target_net.load_state_dict(self.online_net.state_dict())
+
         self.replay_buffer = replay_buffer
         self.gamma = gamma
         self.batch_size = batch_size
