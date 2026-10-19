@@ -119,7 +119,7 @@ def run_single(results_dir: Path, config: Hyperparameters):
 
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    with open(out_dir / "hyperparameters.json", "w", encoding="utf-8") as f:
+    with open(out_dir / "config.json", "w", encoding="utf-8") as f:
         json.dump(config.model_dump(), f, indent=2)
 
     agent = build_agent(config)
