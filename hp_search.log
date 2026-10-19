@@ -1,0 +1,780 @@
+00:00:02 
+00:00:02 === [1/20] base ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [2/20] eps_original ===
+00:00:11 Episode   25 | Reward  -153.52 | Epsilon 0.0100
+00:00:17 Episode   50 | Reward  -155.32 | Epsilon 0.0100
+00:00:02 
+00:00:02 === [1/20] base ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [2/20] eps_original ===
+00:00:11 Episode   25 | Reward  -162.11 | Epsilon 0.0100
+00:00:17 Episode   50 | Reward  -113.63 | Epsilon 0.0100
+00:00:24 Episode   75 | Reward  -201.31 | Epsilon 0.0100
+00:00:30 Episode  100 | Reward  -200.59 | Epsilon 0.0100
+00:00:36 Episode  125 | Reward  -131.50 | Epsilon 0.0100
+00:00:40 Episode  150 | Reward  -121.51 | Epsilon 0.0100
+00:00:44 Episode  175 | Reward  -173.23 | Epsilon 0.0100
+00:00:49 Episode  200 | Reward  -204.98 | Epsilon 0.0100
+00:00:55 Episode  225 | Reward  -201.29 | Epsilon 0.0100
+00:01:00 Episode  250 | Reward  -201.48 | Epsilon 0.0100
+00:01:05 Episode  275 | Reward   -83.11 | Epsilon 0.0100
+00:01:09 Episode  300 | Reward  -154.65 | Epsilon 0.0100
+00:01:11 Saved video to results/hp/eps_original/videos/evaluation_episode.mp4
+00:01:11 	mean_reward=-124.30000305175781 std_reward=27.925079345703125 min_reward=-175.0 max_reward=-83.0 successes=20 episodes=20
+00:01:11 
+00:01:11 === [3/20] eps_start_01 ===
+00:01:11 	None
+00:01:11 
+00:01:11 === [4/20] eps_decay_9995 ===
+00:01:16 Episode   25 | Reward  -159.23 | Epsilon 0.1249
+00:01:21 Episode   50 | Reward  -158.32 | Epsilon 0.0500
+00:01:28 Episode   75 | Reward  -206.26 | Epsilon 0.0500
+00:01:35 Episode  100 | Reward  -200.39 | Epsilon 0.0500
+00:01:41 Episode  125 | Reward  -182.79 | Epsilon 0.0500
+00:01:46 Episode  150 | Reward  -167.89 | Epsilon 0.0500
+00:01:52 Episode  175 | Reward  -145.79 | Epsilon 0.0500
+00:01:58 Episode  200 | Reward  -168.18 | Epsilon 0.0500
+00:02:05 Episode  225 | Reward  -158.74 | Epsilon 0.0500
+00:02:10 Episode  250 | Reward  -104.69 | Epsilon 0.0500
+00:02:15 Episode  275 | Reward   -89.95 | Epsilon 0.0500
+00:02:20 Episode  300 | Reward  -169.44 | Epsilon 0.0500
+00:02:21 Saved video to results/hp/eps_decay_9995/videos/evaluation_episode.mp4
+00:02:21 	mean_reward=-105.5 std_reward=18.56744384765625 min_reward=-163.0 max_reward=-84.0 successes=20 episodes=20
+00:02:21 
+00:02:21 === [5/20] eps_decay_99995 ===
+00:02:21 	None
+00:02:21 
+00:02:21 === [6/20] eps_end_020 ===
+00:02:28 Episode   25 | Reward  -200.28 | Epsilon 0.6065
+00:02:35 Episode   50 | Reward  -202.99 | Epsilon 0.3679
+00:02:42 Episode   75 | Reward  -199.40 | Epsilon 0.2231
+00:02:50 Episode  100 | Reward  -194.93 | Epsilon 0.2000
+00:02:57 Episode  125 | Reward  -176.49 | Epsilon 0.2000
+00:03:03 Episode  150 | Reward  -203.56 | Epsilon 0.2000
+00:03:11 Episode  175 | Reward  -201.16 | Epsilon 0.2000
+00:03:18 Episode  200 | Reward  -200.75 | Epsilon 0.2000
+00:03:26 Episode  225 | Reward  -198.84 | Epsilon 0.2000
+00:03:33 Episode  250 | Reward  -200.49 | Epsilon 0.2000
+00:03:41 Episode  275 | Reward  -199.64 | Epsilon 0.2000
+00:03:48 Episode  300 | Reward  -199.08 | Epsilon 0.2000
+00:03:50 Saved video to results/hp/eps_end_020/videos/evaluation_episode.mp4
+00:03:50 	mean_reward=-200.0 std_reward=0.0 min_reward=-200.0 max_reward=-200.0 successes=0 episodes=20
+00:03:50 
+00:03:50 === [7/20] lr_1e4 ===
+00:03:56 Episode   25 | Reward  -201.81 | Epsilon 0.6065
+00:04:03 Episode   50 | Reward  -204.53 | Epsilon 0.3679
+00:04:10 Episode   75 | Reward  -201.98 | Epsilon 0.2277
+00:04:16 Episode  100 | Reward  -197.92 | Epsilon 0.1421
+00:04:23 Episode  125 | Reward  -210.05 | Epsilon 0.0864
+00:04:30 Episode  150 | Reward  -200.37 | Epsilon 0.0524
+00:04:37 Episode  175 | Reward  -183.06 | Epsilon 0.0500
+00:04:43 Episode  200 | Reward  -167.30 | Epsilon 0.0500
+00:04:48 Episode  225 | Reward  -114.22 | Epsilon 0.0500
+00:04:54 Episode  250 | Reward  -136.68 | Epsilon 0.0500
+00:05:01 Episode  275 | Reward  -200.31 | Epsilon 0.0500
+00:05:08 Episode  300 | Reward  -200.78 | Epsilon 0.0500
+00:05:09 Saved video to results/hp/lr_1e4/videos/evaluation_episode.mp4
+00:05:09 	mean_reward=-152.85000610351562 std_reward=24.530134201049805 min_reward=-200.0 max_reward=-136.0 successes=16 episodes=20
+00:05:09 
+00:05:09 === [8/20] lr_3e4 ===
+00:05:16 Episode   25 | Reward  -196.24 | Epsilon 0.6065
+00:05:23 Episode   50 | Reward  -199.00 | Epsilon 0.3794
+00:05:30 Episode   75 | Reward  -204.38 | Epsilon 0.2312
+00:05:37 Episode  100 | Reward  -200.89 | Epsilon 0.1402
+00:05:44 Episode  125 | Reward  -200.24 | Epsilon 0.0862
+00:05:48 Episode  150 | Reward   -91.84 | Epsilon 0.0630
+00:05:53 Episode  175 | Reward   -88.14 | Epsilon 0.0500
+00:05:58 Episode  200 | Reward  -161.16 | Epsilon 0.0500
+00:06:05 Episode  225 | Reward  -194.53 | Epsilon 0.0500
+00:06:12 Episode  250 | Reward  -161.00 | Epsilon 0.0500
+00:06:18 Episode  275 | Reward   -81.75 | Epsilon 0.0500
+00:06:23 Episode  300 | Reward  -146.72 | Epsilon 0.0500
+00:06:24 Saved video to results/hp/lr_3e4/videos/evaluation_episode.mp4
+00:06:24 	mean_reward=-196.1999969482422 std_reward=7.599999904632568 min_reward=-200.0 max_reward=-181.0 successes=4 episodes=20
+00:06:24 
+00:06:24 === [9/20] lr_3e3 ===
+00:06:31 Episode   25 | Reward  -197.37 | Epsilon 0.6065
+00:06:39 Episode   50 | Reward  -201.20 | Epsilon 0.3679
+00:06:46 Episode   75 | Reward  -201.59 | Epsilon 0.2231
+00:06:53 Episode  100 | Reward  -208.56 | Epsilon 0.1381
+00:06:59 Episode  125 | Reward  -148.59 | Epsilon 0.0974
+00:07:05 Episode  150 | Reward  -140.99 | Epsilon 0.0662
+00:07:13 Episode  175 | Reward  -201.65 | Epsilon 0.0500
+00:07:20 Episode  200 | Reward  -197.91 | Epsilon 0.0500
+00:07:28 Episode  225 | Reward  -200.10 | Epsilon 0.0500
+00:07:35 Episode  250 | Reward  -135.03 | Epsilon 0.0500
+00:07:42 Episode  275 | Reward  -163.99 | Epsilon 0.0500
+00:07:50 Episode  300 | Reward  -190.28 | Epsilon 0.0500
+00:07:51 Saved video to results/hp/lr_3e3/videos/evaluation_episode.mp4
+00:07:51 	mean_reward=-188.5 std_reward=16.020299911499023 min_reward=-200.0 max_reward=-147.0 successes=8 episodes=20
+00:07:51 
+00:07:51 === [10/20] lr_1e2 ===
+00:07:58 Episode   25 | Reward  -197.61 | Epsilon 0.6065
+00:08:05 Episode   50 | Reward  -200.98 | Epsilon 0.3679
+00:08:12 Episode   75 | Reward  -207.10 | Epsilon 0.2231
+00:08:19 Episode  100 | Reward  -193.45 | Epsilon 0.1377
+00:08:25 Episode  125 | Reward  -188.68 | Epsilon 0.0922
+00:08:32 Episode  150 | Reward  -158.88 | Epsilon 0.0607
+00:08:40 Episode  175 | Reward  -194.20 | Epsilon 0.0500
+00:08:48 Episode  200 | Reward  -207.00 | Epsilon 0.0500
+00:08:55 Episode  225 | Reward  -199.96 | Epsilon 0.0500
+00:09:03 Episode  250 | Reward  -199.59 | Epsilon 0.0500
+00:09:12 Episode  275 | Reward  -198.94 | Epsilon 0.0500
+00:09:20 Episode  300 | Reward  -201.65 | Epsilon 0.0500
+00:09:22 Saved video to results/hp/lr_1e2/videos/evaluation_episode.mp4
+00:09:22 	mean_reward=-151.25 std_reward=50.47066116333008 min_reward=-200.0 max_reward=-89.0 successes=11 episodes=20
+00:09:22 
+00:09:22 === [11/20] tuf_1 ===
+00:09:29 Episode   25 | Reward  -199.41 | Epsilon 0.6065
+00:09:37 Episode   50 | Reward  -204.94 | Epsilon 0.3679
+00:09:44 Episode   75 | Reward  -212.19 | Epsilon 0.2303
+00:09:53 Episode  100 | Reward  -206.68 | Epsilon 0.1436
+00:10:01 Episode  125 | Reward  -197.92 | Epsilon 0.0878
+00:10:10 Episode  150 | Reward  -200.77 | Epsilon 0.0533
+00:10:19 Episode  175 | Reward  -137.36 | Epsilon 0.0500
+00:10:28 Episode  200 | Reward  -206.14 | Epsilon 0.0500
+00:10:37 Episode  225 | Reward  -203.17 | Epsilon 0.0500
+00:10:46 Episode  250 | Reward  -197.12 | Epsilon 0.0500
+00:10:55 Episode  275 | Reward  -201.92 | Epsilon 0.0500
+00:11:03 Episode  300 | Reward  -192.90 | Epsilon 0.0500
+00:11:05 Saved video to results/hp/tuf_1/videos/evaluation_episode.mp4
+00:11:05 	mean_reward=-125.94999694824219 std_reward=36.256690979003906 min_reward=-200.0 max_reward=-85.0 successes=19 episodes=20
+00:11:05 
+00:11:05 === [12/20] tuf_100 ===
+00:11:11 Episode   25 | Reward  -199.88 | Epsilon 0.6065
+00:11:18 Episode   50 | Reward  -188.08 | Epsilon 0.3744
+00:11:25 Episode   75 | Reward  -153.55 | Epsilon 0.2350
+00:11:31 Episode  100 | Reward  -155.79 | Epsilon 0.1614
+00:11:36 Episode  125 | Reward  -161.27 | Epsilon 0.1108
+00:11:42 Episode  150 | Reward  -142.26 | Epsilon 0.0745
+00:11:48 Episode  175 | Reward   -92.50 | Epsilon 0.0523
+00:11:54 Episode  200 | Reward  -139.21 | Epsilon 0.0500
+00:12:00 Episode  225 | Reward  -138.16 | Epsilon 0.0500
+00:12:06 Episode  250 | Reward  -144.51 | Epsilon 0.0500
+00:12:12 Episode  275 | Reward   -86.53 | Epsilon 0.0500
+00:12:18 Episode  300 | Reward  -158.06 | Epsilon 0.0500
+00:12:19 Saved video to results/hp/tuf_100/videos/evaluation_episode.mp4
+00:12:19 	mean_reward=-124.3499984741211 std_reward=27.57403564453125 min_reward=-158.0 max_reward=-83.0 successes=20 episodes=20
+00:12:19 
+00:12:19 === [13/20] tuf_1000 ===
+00:12:26 Episode   25 | Reward  -212.38 | Epsilon 0.6065
+00:12:33 Episode   50 | Reward  -196.06 | Epsilon 0.3774
+00:12:39 Episode   75 | Reward  -195.08 | Epsilon 0.2473
+00:12:46 Episode  100 | Reward  -201.29 | Epsilon 0.1523
+00:12:54 Episode  125 | Reward  -201.43 | Epsilon 0.0924
+00:13:01 Episode  150 | Reward  -199.93 | Epsilon 0.0560
+00:13:09 Episode  175 | Reward  -200.19 | Epsilon 0.0500
+00:13:17 Episode  200 | Reward  -209.38 | Epsilon 0.0500
+00:13:24 Episode  225 | Reward  -202.17 | Epsilon 0.0500
+00:13:31 Episode  250 | Reward  -204.07 | Epsilon 0.0500
+00:13:38 Episode  275 | Reward  -200.89 | Epsilon 0.0500
+00:13:45 Episode  300 | Reward  -200.38 | Epsilon 0.0500
+00:13:47 Saved video to results/hp/tuf_1000/videos/evaluation_episode.mp4
+00:13:47 	mean_reward=-200.0 std_reward=0.0 min_reward=-200.0 max_reward=-200.0 successes=0 episodes=20
+00:13:47 
+00:13:47 === [14/20] tuf_2000 ===
+00:13:53 Episode   25 | Reward  -181.41 | Epsilon 0.6081
+00:14:00 Episode   50 | Reward  -203.73 | Epsilon 0.3828
+00:14:06 Episode   75 | Reward  -207.08 | Epsilon 0.2586
+00:14:11 Episode  100 | Reward  -139.19 | Epsilon 0.1789
+00:14:16 Episode  125 | Reward  -135.37 | Epsilon 0.1263
+00:14:21 Episode  150 | Reward  -151.38 | Epsilon 0.0899
+00:14:26 Episode  175 | Reward  -130.36 | Epsilon 0.0632
+00:14:32 Episode  200 | Reward  -194.73 | Epsilon 0.0500
+00:14:39 Episode  225 | Reward  -200.22 | Epsilon 0.0500
+00:14:47 Episode  250 | Reward  -199.42 | Epsilon 0.0500
+00:14:54 Episode  275 | Reward  -202.75 | Epsilon 0.0500
+00:15:02 Episode  300 | Reward  -201.73 | Epsilon 0.0500
+00:15:04 Saved video to results/hp/tuf_2000/videos/evaluation_episode.mp4
+00:15:04 	mean_reward=-200.0 std_reward=0.0 min_reward=-200.0 max_reward=-200.0 successes=0 episodes=20
+00:15:04 
+00:15:04 === [15/20] gamma_095 ===
+00:15:11 Episode   25 | Reward  -225.60 | Epsilon 0.6082
+00:15:19 Episode   50 | Reward  -207.80 | Epsilon 0.3689
+00:15:27 Episode   75 | Reward  -208.93 | Epsilon 0.2237
+00:15:35 Episode  100 | Reward  -203.14 | Epsilon 0.1359
+00:15:42 Episode  125 | Reward  -219.53 | Epsilon 0.0896
+00:15:49 Episode  150 | Reward  -238.30 | Epsilon 0.0572
+00:15:57 Episode  175 | Reward  -220.63 | Epsilon 0.0500
+00:16:05 Episode  200 | Reward  -240.66 | Epsilon 0.0500
+00:16:13 Episode  225 | Reward  -222.77 | Epsilon 0.0500
+00:16:21 Episode  250 | Reward  -211.57 | Epsilon 0.0500
+00:16:29 Episode  275 | Reward  -228.40 | Epsilon 0.0500
+00:16:37 Episode  300 | Reward  -191.69 | Epsilon 0.0500
+00:16:38 Saved video to results/hp/gamma_095/videos/evaluation_episode.mp4
+00:16:38 	mean_reward=-200.0 std_reward=0.0 min_reward=-200.0 max_reward=-200.0 successes=0 episodes=20
+00:16:38 
+00:16:38 === [16/20] gamma_098 ===
+00:16:45 Episode   25 | Reward  -218.28 | Epsilon 0.6065
+00:16:51 Episode   50 | Reward  -205.60 | Epsilon 0.3679
+00:16:59 Episode   75 | Reward  -203.38 | Epsilon 0.2231
+00:17:06 Episode  100 | Reward  -206.13 | Epsilon 0.1353
+00:17:12 Episode  125 | Reward  -179.02 | Epsilon 0.0899
+00:17:18 Episode  150 | Reward  -159.81 | Epsilon 0.0595
+00:17:25 Episode  175 | Reward  -202.15 | Epsilon 0.0500
+00:17:32 Episode  200 | Reward  -143.03 | Epsilon 0.0500
+00:17:38 Episode  225 | Reward  -122.55 | Epsilon 0.0500
+00:17:43 Episode  250 | Reward  -181.36 | Epsilon 0.0500
+00:17:50 Episode  275 | Reward  -207.60 | Epsilon 0.0500
+00:17:58 Episode  300 | Reward  -202.69 | Epsilon 0.0500
+00:18:00 Saved video to results/hp/gamma_098/videos/evaluation_episode.mp4
+00:18:00 	mean_reward=-161.64999389648438 std_reward=52.315650939941406 min_reward=-200.0 max_reward=-85.0 successes=7 episodes=20
+00:18:00 
+00:18:00 === [17/20] gamma_0995 ===
+00:18:06 Episode   25 | Reward  -203.30 | Epsilon 0.6065
+00:18:13 Episode   50 | Reward  -194.98 | Epsilon 0.3679
+00:18:21 Episode   75 | Reward  -197.34 | Epsilon 0.2231
+00:18:29 Episode  100 | Reward  -198.77 | Epsilon 0.1357
+00:18:35 Episode  125 | Reward  -108.99 | Epsilon 0.0916
+00:18:39 Episode  150 | Reward  -148.41 | Epsilon 0.0684
+00:18:47 Episode  175 | Reward  -200.59 | Epsilon 0.0500
+00:18:55 Episode  200 | Reward  -199.51 | Epsilon 0.0500
+00:19:03 Episode  225 | Reward  -169.86 | Epsilon 0.0500
+00:19:09 Episode  250 | Reward  -103.66 | Epsilon 0.0500
+00:19:15 Episode  275 | Reward   -83.65 | Epsilon 0.0500
+00:19:21 Episode  300 | Reward  -169.70 | Epsilon 0.0500
+00:19:23 Saved video to results/hp/gamma_0995/videos/evaluation_episode.mp4
+00:19:23 	mean_reward=-177.60000610351562 std_reward=32.49061584472656 min_reward=-200.0 max_reward=-102.0 successes=10 episodes=20
+00:19:23 
+00:19:23 === [18/20] gamma_0999 ===
+00:19:29 Episode   25 | Reward  -195.01 | Epsilon 0.6065
+00:19:37 Episode   50 | Reward  -198.76 | Epsilon 0.3679
+00:19:44 Episode   75 | Reward  -193.60 | Epsilon 0.2231
+00:19:51 Episode  100 | Reward  -199.81 | Epsilon 0.1353
+00:19:58 Episode  125 | Reward  -196.47 | Epsilon 0.0883
+00:20:04 Episode  150 | Reward  -146.26 | Epsilon 0.0632
+00:20:10 Episode  175 | Reward  -199.33 | Epsilon 0.0500
+00:20:19 Episode  200 | Reward  -197.34 | Epsilon 0.0500
+00:20:26 Episode  225 | Reward  -155.13 | Epsilon 0.0500
+00:20:34 Episode  250 | Reward  -116.33 | Epsilon 0.0500
+00:20:40 Episode  275 | Reward   -85.70 | Epsilon 0.0500
+00:20:48 Episode  300 | Reward  -195.74 | Epsilon 0.0500
+00:20:49 Saved video to results/hp/gamma_0999/videos/evaluation_episode.mp4
+00:20:49 	mean_reward=-177.85000610351562 std_reward=44.35231018066406 min_reward=-200.0 max_reward=-84.0 successes=4 episodes=20
+00:20:49 
+00:20:49 === [19/20] buffer_10k ===
+00:20:56 Episode   25 | Reward  -206.12 | Epsilon 0.6065
+00:21:03 Episode   50 | Reward  -201.48 | Epsilon 0.3693
+00:21:10 Episode   75 | Reward  -207.69 | Epsilon 0.2240
+00:21:18 Episode  100 | Reward  -199.66 | Epsilon 0.1359
+00:21:24 Episode  125 | Reward  -168.39 | Epsilon 0.0852
+00:21:31 Episode  150 | Reward  -173.06 | Epsilon 0.0567
+00:21:38 Episode  175 | Reward  -202.96 | Epsilon 0.0500
+00:21:45 Episode  200 | Reward  -200.87 | Epsilon 0.0500
+00:21:52 Episode  225 | Reward  -164.04 | Epsilon 0.0500
+00:21:59 Episode  250 | Reward  -199.54 | Epsilon 0.0500
+00:22:07 Episode  275 | Reward  -201.02 | Epsilon 0.0500
+00:22:14 Episode  300 | Reward  -201.21 | Epsilon 0.0500
+00:22:16 Saved video to results/hp/buffer_10k/videos/evaluation_episode.mp4
+00:22:16 	mean_reward=-175.0500030517578 std_reward=30.591623306274414 min_reward=-200.0 max_reward=-135.0 successes=8 episodes=20
+00:22:16 
+00:22:16 === [20/20] episodes_500 ===
+00:22:23 Episode   25 | Reward  -202.21 | Epsilon 0.6065
+00:22:30 Episode   50 | Reward  -199.65 | Epsilon 0.3713
+00:22:38 Episode   75 | Reward  -200.94 | Epsilon 0.2252
+00:22:45 Episode  100 | Reward  -195.76 | Epsilon 0.1366
+00:22:53 Episode  125 | Reward  -213.71 | Epsilon 0.0829
+00:23:00 Episode  150 | Reward  -203.02 | Epsilon 0.0507
+00:23:08 Episode  175 | Reward  -200.55 | Epsilon 0.0500
+00:23:15 Episode  200 | Reward  -201.37 | Epsilon 0.0500
+00:23:23 Episode  225 | Reward  -208.97 | Epsilon 0.0500
+00:23:30 Episode  250 | Reward  -204.27 | Epsilon 0.0500
+00:23:38 Episode  275 | Reward  -200.89 | Epsilon 0.0500
+00:23:45 Episode  300 | Reward  -205.79 | Epsilon 0.0500
+00:23:53 Episode  325 | Reward  -196.28 | Epsilon 0.0500
+00:24:02 Episode  350 | Reward  -204.94 | Epsilon 0.0500
+00:24:10 Episode  375 | Reward  -200.00 | Epsilon 0.0500
+00:24:18 Episode  400 | Reward  -200.41 | Epsilon 0.0500
+00:24:26 Episode  425 | Reward  -202.28 | Epsilon 0.0500
+00:24:35 Episode  450 | Reward  -201.35 | Epsilon 0.0500
+00:24:44 Episode  475 | Reward  -200.29 | Epsilon 0.0500
+00:24:52 Episode  500 | Reward  -200.54 | Epsilon 0.0500
+00:24:54 Saved video to results/hp/episodes_500/videos/evaluation_episode.mp4
+00:24:54 	mean_reward=-200.0 std_reward=0.0 min_reward=-200.0 max_reward=-200.0 successes=0 episodes=20
+00:00:02 
+00:00:02 === [1/3] batch_16 ===
+00:00:08 Episode   25 | Reward  -178.02 | Epsilon 0.6083
+00:00:14 Episode   50 | Reward  -200.63 | Epsilon 0.3705
+00:00:20 Episode   75 | Reward  -202.12 | Epsilon 0.2247
+00:00:27 Episode  100 | Reward  -198.26 | Epsilon 0.1363
+00:00:32 Episode  125 | Reward  -205.85 | Epsilon 0.0894
+00:00:37 Episode  150 | Reward  -203.33 | Epsilon 0.0595
+00:00:43 Episode  175 | Reward  -202.54 | Epsilon 0.0500
+00:00:50 Episode  200 | Reward  -200.70 | Epsilon 0.0500
+00:00:57 Episode  225 | Reward  -183.76 | Epsilon 0.0500
+00:01:02 Episode  250 | Reward  -154.86 | Epsilon 0.0500
+00:01:08 Episode  275 | Reward  -196.60 | Epsilon 0.0500
+00:01:14 Episode  300 | Reward  -196.49 | Epsilon 0.0500
+00:01:16 Saved video to results/hp_results/batch_16/videos/evaluation_episode.mp4
+00:01:16 	mean_reward=-200.0 std_reward=0.0 min_reward=-200.0 max_reward=-200.0 successes=0 episodes=20
+00:01:16 
+00:01:16 === [2/3] batch_32 ===
+00:01:22 Episode   25 | Reward  -207.55 | Epsilon 0.6065
+00:01:29 Episode   50 | Reward  -195.74 | Epsilon 0.3679
+00:01:36 Episode   75 | Reward  -200.43 | Epsilon 0.2231
+00:01:43 Episode  100 | Reward  -204.93 | Epsilon 0.1353
+00:01:48 Episode  125 | Reward  -141.04 | Epsilon 0.0914
+00:01:53 Episode  150 | Reward  -152.22 | Epsilon 0.0617
+00:02:00 Episode  175 | Reward  -201.53 | Epsilon 0.0500
+00:02:08 Episode  200 | Reward  -200.64 | Epsilon 0.0500
+00:02:14 Episode  225 | Reward  -180.21 | Epsilon 0.0500
+00:02:20 Episode  250 | Reward  -145.70 | Epsilon 0.0500
+00:02:26 Episode  275 | Reward  -150.58 | Epsilon 0.0500
+00:02:32 Episode  300 | Reward  -143.69 | Epsilon 0.0500
+00:02:34 Saved video to results/hp_results/batch_32/videos/evaluation_episode.mp4
+00:02:34 	mean_reward=-200.0 std_reward=0.0 min_reward=-200.0 max_reward=-200.0 successes=0 episodes=20
+00:02:34 
+00:02:34 === [3/3] batch_128 ===
+00:02:42 Episode   25 | Reward  -204.55 | Epsilon 0.6065
+00:02:51 Episode   50 | Reward  -201.73 | Epsilon 0.3679
+00:03:00 Episode   75 | Reward  -200.49 | Epsilon 0.2231
+00:03:09 Episode  100 | Reward  -198.00 | Epsilon 0.1353
+00:03:17 Episode  125 | Reward  -128.71 | Epsilon 0.0904
+00:03:24 Episode  150 | Reward  -160.65 | Epsilon 0.0609
+00:03:33 Episode  175 | Reward  -201.41 | Epsilon 0.0500
+00:03:42 Episode  200 | Reward  -201.44 | Epsilon 0.0500
+00:03:50 Episode  225 | Reward  -181.02 | Epsilon 0.0500
+00:03:59 Episode  250 | Reward  -200.46 | Epsilon 0.0500
+00:04:09 Episode  275 | Reward  -201.04 | Epsilon 0.0500
+00:04:17 Episode  300 | Reward  -203.16 | Epsilon 0.0500
+00:04:19 Saved video to results/hp_results/batch_128/videos/evaluation_episode.mp4
+00:04:19 	mean_reward=-169.25 std_reward=41.90927505493164 min_reward=-200.0 max_reward=-111.0 successes=7 episodes=20
+00:00:01 
+00:00:01 === [1/25] base ===
+00:00:01 	None
+00:00:01 
+00:00:01 === [2/25] eps_original ===
+00:00:01 	None
+00:00:01 
+00:00:01 === [3/25] eps_start_01 ===
+00:00:01 	None
+00:00:01 
+00:00:01 === [4/25] eps_decay_9995 ===
+00:00:01 	None
+00:00:01 
+00:00:01 === [5/25] eps_decay_99995 ===
+00:00:01 	None
+00:00:01 
+00:00:01 === [6/25] eps_end_020 ===
+00:00:01 	None
+00:00:01 
+00:00:01 === [7/25] lr_1e4 ===
+00:00:01 	None
+00:00:01 
+00:00:01 === [8/25] lr_3e4 ===
+00:00:01 	None
+00:00:01 
+00:00:01 === [9/25] lr_3e3 ===
+00:00:01 	None
+00:00:01 
+00:00:01 === [10/25] lr_1e2 ===
+00:00:01 	None
+00:00:01 
+00:00:01 === [11/25] tuf_1 ===
+00:00:01 	None
+00:00:01 
+00:00:01 === [12/25] tuf_100 ===
+00:00:01 	None
+00:00:01 
+00:00:01 === [13/25] tuf_1000 ===
+00:00:01 	None
+00:00:01 
+00:00:01 === [14/25] tuf_2000 ===
+00:00:01 	None
+00:00:01 
+00:00:01 === [15/25] gamma_095 ===
+00:00:01 	None
+00:00:01 
+00:00:01 === [16/25] gamma_098 ===
+00:00:01 	None
+00:00:01 
+00:00:01 === [17/25] gamma_0995 ===
+00:00:01 	None
+00:00:01 
+00:00:01 === [18/25] gamma_0999 ===
+00:00:01 	None
+00:00:01 
+00:00:01 === [19/25] buffer_10k ===
+00:00:01 	None
+00:00:01 
+00:00:01 === [20/25] episodes_500 ===
+00:00:01 	None
+00:00:01 
+00:00:01 === [21/25] batch_16 ===
+00:00:01 	None
+00:00:01 
+00:00:01 === [22/25] batch_32 ===
+00:00:01 	None
+00:00:01 
+00:00:01 === [23/25] batch_128 ===
+00:00:01 	None
+00:00:01 
+00:00:01 === [24/25] batch_256 ===
+00:00:11 Episode   25 | Reward  -204.69 | Epsilon 0.6065
+00:00:21 Episode   50 | Reward  -200.81 | Epsilon 0.3679
+00:00:32 Episode   75 | Reward  -199.26 | Epsilon 0.2231
+00:00:43 Episode  100 | Reward  -209.24 | Epsilon 0.1353
+00:00:51 Episode  125 | Reward  -160.71 | Epsilon 0.0924
+00:00:59 Episode  150 | Reward  -140.28 | Epsilon 0.0655
+00:01:10 Episode  175 | Reward  -199.50 | Epsilon 0.0500
+00:01:22 Episode  200 | Reward  -204.50 | Epsilon 0.0500
+00:01:32 Episode  225 | Reward  -114.65 | Epsilon 0.0500
+00:01:41 Episode  250 | Reward  -192.33 | Epsilon 0.0500
+00:01:51 Episode  275 | Reward   -95.40 | Epsilon 0.0500
+00:02:02 Episode  300 | Reward  -197.29 | Epsilon 0.0500
+00:02:04 Saved video to results/hp_results/batch_256/videos/evaluation_episode.mp4
+00:02:04 	mean_reward=-137.60000610351562 std_reward=41.07967758178711 min_reward=-200.0 max_reward=-84.0 successes=17 episodes=20
+00:02:04 
+00:02:04 === [25/25] batch_512 ===
+00:02:16 Episode   25 | Reward  -205.08 | Epsilon 0.6065
+00:02:31 Episode   50 | Reward  -201.74 | Epsilon 0.3679
+00:02:47 Episode   75 | Reward  -204.57 | Epsilon 0.2231
+00:03:02 Episode  100 | Reward  -147.35 | Epsilon 0.1375
+00:03:16 Episode  125 | Reward  -169.92 | Epsilon 0.0897
+00:03:27 Episode  150 | Reward  -151.15 | Epsilon 0.0633
+00:03:43 Episode  175 | Reward  -200.65 | Epsilon 0.0500
+00:04:00 Episode  200 | Reward  -201.16 | Epsilon 0.0500
+00:04:15 Episode  225 | Reward  -201.42 | Epsilon 0.0500
+00:04:32 Episode  250 | Reward  -202.33 | Epsilon 0.0500
+00:04:47 Episode  275 | Reward  -195.27 | Epsilon 0.0500
+00:05:00 Episode  300 | Reward  -119.62 | Epsilon 0.0500
+00:05:01 Saved video to results/hp_results/batch_512/videos/evaluation_episode.mp4
+00:05:01 	mean_reward=-120.4000015258789 std_reward=18.491619110107422 min_reward=-200.0 max_reward=-112.0 successes=19 episodes=20
+00:00:02 
+00:00:02 === [1/26] base ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [2/26] eps_original ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [3/26] eps_start_01 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [4/26] eps_decay_9995 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [5/26] eps_decay_99995 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [6/26] eps_end_020 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [7/26] lr_1e4 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [8/26] lr_3e4 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [9/26] lr_3e3 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [10/26] lr_1e2 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [11/26] tuf_1 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [12/26] tuf_100 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [13/26] tuf_1000 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [14/26] tuf_2000 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [15/26] gamma_095 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [16/26] gamma_098 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [17/26] gamma_0995 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [18/26] gamma_0999 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [19/26] buffer_10k ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [20/26] episodes_500 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [21/26] batch_16 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [22/26] batch_32 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [23/26] batch_128 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [24/26] batch_256 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [25/26] batch_512 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [26/26] batch_512 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [1/26] base ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [2/26] eps_original ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [3/26] eps_start_01 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [4/26] eps_decay_9995 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [5/26] eps_decay_99995 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [6/26] eps_end_020 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [7/26] lr_1e4 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [8/26] lr_3e4 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [9/26] lr_3e3 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [10/26] lr_1e2 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [11/26] tuf_1 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [12/26] tuf_100 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [13/26] tuf_1000 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [14/26] tuf_2000 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [15/26] gamma_095 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [16/26] gamma_098 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [17/26] gamma_0995 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [18/26] gamma_0999 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [19/26] buffer_10k ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [20/26] episodes_500 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [21/26] batch_16 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [22/26] batch_32 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [23/26] batch_128 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [24/26] batch_256 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [25/26] batch_512 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [26/26] batch_512 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [1/26] base ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [2/26] eps_original ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [3/26] eps_start_01 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [4/26] eps_decay_9995 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [5/26] eps_decay_99995 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [6/26] eps_end_020 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [7/26] lr_1e4 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [8/26] lr_3e4 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [9/26] lr_3e3 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [10/26] lr_1e2 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [11/26] tuf_1 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [12/26] tuf_100 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [13/26] tuf_1000 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [14/26] tuf_2000 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [15/26] gamma_095 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [16/26] gamma_098 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [17/26] gamma_0995 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [18/26] gamma_0999 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [19/26] buffer_10k ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [20/26] episodes_500 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [21/26] batch_16 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [22/26] batch_32 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [23/26] batch_128 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [24/26] batch_256 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [25/26] batch_512 ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [26/26] batch_1024 ===
+00:00:17 Episode   25 | Reward  -197.48 | Epsilon 0.6065
+00:00:37 Episode   50 | Reward  -201.43 | Epsilon 0.3682
+00:01:03 Episode   75 | Reward  -201.15 | Epsilon 0.2233
+00:01:25 Episode  100 | Reward  -197.20 | Epsilon 0.1355
+00:01:46 Episode  125 | Reward  -179.07 | Epsilon 0.0857
+00:02:11 Episode  150 | Reward  -200.65 | Epsilon 0.0531
+00:02:36 Episode  175 | Reward  -200.93 | Epsilon 0.0500
+00:03:09 Episode  200 | Reward  -200.08 | Epsilon 0.0500
+00:03:43 Episode  225 | Reward  -200.46 | Epsilon 0.0500
+00:04:14 Episode  250 | Reward  -201.19 | Epsilon 0.0500
+00:04:47 Episode  275 | Reward  -200.19 | Epsilon 0.0500
+00:05:13 Episode  300 | Reward  -148.09 | Epsilon 0.0500
+00:05:15 Saved video to results/hp_results/batch_1024/videos/evaluation_episode.mp4
+00:05:15 	mean_reward=-126.1500015258789 std_reward=15.004249572753906 min_reward=-144.0 max_reward=-101.0 successes=20 episodes=20
+00:00:01 
+00:00:01 === [1/1] base_combination ===
+00:00:15 Episode   25 | Reward  -187.41 | Epsilon 0.0829
+00:00:30 Episode   50 | Reward  -190.07 | Epsilon 0.0500
+00:00:46 Episode   75 | Reward  -192.53 | Epsilon 0.0500
+00:01:02 Episode  100 | Reward  -190.99 | Epsilon 0.0500
+00:01:18 Episode  125 | Reward  -199.64 | Epsilon 0.0500
+00:01:36 Episode  150 | Reward  -199.88 | Epsilon 0.0500
+00:01:53 Episode  175 | Reward  -199.91 | Epsilon 0.0500
+00:02:12 Episode  200 | Reward  -199.61 | Epsilon 0.0500
+00:02:29 Episode  225 | Reward  -199.92 | Epsilon 0.0500
+00:02:47 Episode  250 | Reward  -199.96 | Epsilon 0.0500
+00:03:05 Episode  275 | Reward  -200.00 | Epsilon 0.0500
+00:03:22 Episode  300 | Reward  -199.80 | Epsilon 0.0500
+00:03:24 Saved video to results/hp_results_combination/base_combination/videos/evaluation_episode.mp4
+00:03:24 	mean_reward=-200.0 std_reward=0.0 min_reward=-200.0 max_reward=-200.0 successes=0 episodes=20
+00:00:02 
+00:00:02 === [1/5] base_combination ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [2/5] final_a ===
+00:00:01 
+00:00:01 === [1/5] base_combination ===
+00:00:01 	None
+00:00:01 
+00:00:01 === [2/5] final_a ===
+00:00:07 Episode   25 | Reward  -145.24 | Epsilon 0.1237
+00:00:12 Episode   50 | Reward  -170.72 | Epsilon 0.0500
+00:00:18 Episode   75 | Reward  -201.60 | Epsilon 0.0500
+00:00:25 Episode  100 | Reward  -208.47 | Epsilon 0.0500
+00:00:30 Episode  125 | Reward  -111.75 | Epsilon 0.0500
+00:00:34 Episode  150 | Reward  -106.90 | Epsilon 0.0500
+00:00:40 Episode  175 | Reward  -150.09 | Epsilon 0.0500
+00:00:46 Episode  200 | Reward  -191.87 | Epsilon 0.0500
+00:00:53 Episode  225 | Reward  -134.17 | Epsilon 0.0500
+00:00:58 Episode  250 | Reward  -107.33 | Epsilon 0.0500
+00:01:03 Episode  275 | Reward   -98.48 | Epsilon 0.0500
+00:01:08 Episode  300 | Reward  -149.05 | Epsilon 0.0500
+00:01:09 Saved video to results/hp_results_combination/final_a/videos/evaluation_episode.mp4
+00:01:09 	mean_reward=-102.0 std_reward=10.963576316833496 min_reward=-114.0 max_reward=-83.0 successes=20 episodes=20
+00:01:09 
+00:01:09 === [3/5] final_b_conservative ===
+00:01:18 Episode   25 | Reward  -202.66 | Epsilon 0.1018
+00:01:27 Episode   50 | Reward  -200.49 | Epsilon 0.0500
+00:01:36 Episode   75 | Reward  -168.17 | Epsilon 0.0500
+00:01:43 Episode  100 | Reward   -94.00 | Epsilon 0.0500
+00:01:51 Episode  125 | Reward   -95.54 | Epsilon 0.0500
+00:02:00 Episode  150 | Reward   -88.31 | Epsilon 0.0500
+00:02:07 Episode  175 | Reward   -84.12 | Epsilon 0.0500
+00:02:16 Episode  200 | Reward  -140.23 | Epsilon 0.0500
+00:02:24 Episode  225 | Reward  -140.75 | Epsilon 0.0500
+00:02:33 Episode  250 | Reward  -145.79 | Epsilon 0.0500
+00:02:40 Episode  275 | Reward   -81.62 | Epsilon 0.0500
+00:02:49 Episode  300 | Reward  -149.19 | Epsilon 0.0500
+00:02:50 Saved video to results/hp_results_combination/final_b_conservative/videos/evaluation_episode.mp4
+00:02:50 	mean_reward=-125.8499984741211 std_reward=32.106502532958984 min_reward=-184.0 max_reward=-84.0 successes=20 episodes=20
+00:02:50 
+00:02:50 === [4/5] final_c_aggressive ===
+00:03:04 Episode   25 | Reward  -203.30 | Epsilon 0.1040
+00:03:24 Episode   50 | Reward  -173.22 | Epsilon 0.0500
+00:03:43 Episode   75 | Reward  -131.40 | Epsilon 0.0500
+00:03:59 Episode  100 | Reward  -104.55 | Epsilon 0.0500
+00:04:16 Episode  125 | Reward  -155.52 | Epsilon 0.0500
+00:04:31 Episode  150 | Reward   -90.75 | Epsilon 0.0500
+00:04:46 Episode  175 | Reward  -117.88 | Epsilon 0.0500
+00:05:05 Episode  200 | Reward  -200.83 | Epsilon 0.0500
+00:05:22 Episode  225 | Reward  -151.92 | Epsilon 0.0500
+00:05:39 Episode  250 | Reward  -158.31 | Epsilon 0.0500
+00:05:59 Episode  275 | Reward   -83.17 | Epsilon 0.0500
+00:06:18 Episode  300 | Reward  -140.31 | Epsilon 0.0500
+00:06:19 Saved video to results/hp_results_combination/final_c_aggressive/videos/evaluation_episode.mp4
+00:06:19 	mean_reward=-127.55000305175781 std_reward=27.128353118896484 min_reward=-166.0 max_reward=-85.0 successes=20 episodes=20
+00:06:19 
+00:06:19 === [5/5] final_d_alt_eps ===
+00:06:37 Episode   25 | Reward  -203.56 | Epsilon 0.0608
+00:06:55 Episode   50 | Reward  -201.31 | Epsilon 0.0500
+00:07:15 Episode   75 | Reward  -146.35 | Epsilon 0.0500
+00:07:31 Episode  100 | Reward  -104.16 | Epsilon 0.0500
+00:07:45 Episode  125 | Reward  -110.89 | Epsilon 0.0500
+00:08:02 Episode  150 | Reward  -157.77 | Epsilon 0.0500
+00:08:21 Episode  175 | Reward  -146.21 | Epsilon 0.0500
+00:08:41 Episode  200 | Reward  -145.85 | Epsilon 0.0500
+00:09:00 Episode  225 | Reward  -191.19 | Epsilon 0.0500
+00:09:18 Episode  250 | Reward  -160.20 | Epsilon 0.0500
+00:09:44 Episode  275 | Reward   -85.07 | Epsilon 0.0500
+00:10:02 Episode  300 | Reward  -148.03 | Epsilon 0.0500
+00:10:03 Saved video to results/hp_results_combination/final_d_alt_eps/videos/evaluation_episode.mp4
+00:10:03 	mean_reward=-103.44999694824219 std_reward=14.479209899902344 min_reward=-155.0 max_reward=-84.0 successes=20 episodes=20
