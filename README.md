@@ -1,5 +1,8 @@
 # report.md
 
+Copy of `report/report.md`.
+Look at `report/report.pdf`.
+
 Мои результаты.
 
 # Set up poetry
