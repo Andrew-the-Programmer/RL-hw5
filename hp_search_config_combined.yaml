@@ -1,0 +1,49 @@
+results_root: "results/hp_results_combination"
+
+base: &base
+  name: base
+  seed: 42
+  gamma: 0.99
+  learning_rate: 1e-3
+  batch_size: 64
+  buffer_capacity: 100000
+  epsilon_start: 1.0
+  epsilon_end: 0.05
+  epsilon_decay: 0.9999
+  target_update_freq: 500
+  episodes: 300
+
+experiments:
+  - <<: *base
+
+  - <<: *base
+    name: base_combination
+    gamma: 0.9995
+    learning_rate: 1e-4
+    batch_size: 512
+    buffer_capacity: 10000
+    epsilon_decay: 0.9995
+    target_update_freq: 100
+
+  - <<: *base
+    name: final_a
+    epsilon_decay: 0.9995
+
+  - <<: *base
+    name: final_b_conservative
+    epsilon_decay: 0.9995
+    target_update_freq: 100
+    batch_size: 256
+
+  - <<: *base
+    name: final_c_aggressive
+    epsilon_decay: 0.9995
+    target_update_freq: 100
+    batch_size: 1024
+
+  - <<: *base
+    name: final_d_alt_eps
+    epsilon_start: 0.1
+    epsilon_decay: 0.9999
+    target_update_freq: 100
+    batch_size: 1024
