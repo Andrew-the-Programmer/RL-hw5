@@ -1,0 +1,8 @@
+{
+  "mean_reward": -125.94999694824219,
+  "std_reward": 36.256690979003906,
+  "min_reward": -200.0,
+  "max_reward": -85.0,
+  "successes": 19,
+  "episodes": 20
+}

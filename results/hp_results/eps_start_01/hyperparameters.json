@@ -1,0 +1,13 @@
+{
+  "batch_size": 64,
+  "buffer_capacity": 100000,
+  "episodes": 300,
+  "epsilon_decay": 0.9999,
+  "epsilon_end": 0.05,
+  "epsilon_start": 0.1,
+  "gamma": 0.99,
+  "learning_rate": 0.001,
+  "name": "eps_start_01",
+  "seed": 42,
+  "target_update_freq": 500
+}
