@@ -13,7 +13,9 @@ from src.train import train
 
 STATE_DIM = 2
 ACTION_DIM = 3
-EVAL_EPISODES = 20
+TRAIN_SEED_OFFSET = 0
+EVAL_SEED_OFFSET = 1000
+RENDER_SEED_OFFSET = 2000
 
 
 class Hyperparameters(BaseModel):
@@ -27,7 +29,8 @@ class Hyperparameters(BaseModel):
     epsilon_end: float = Field(ge=0.0, le=1.0)
     epsilon_decay: float = Field(gt=0.0, le=1.0)
     target_update_freq: int = Field(ge=1)
-    episodes: int = Field(default=300, ge=1)
+    train_episodes: int = Field(default=300, ge=1)
+    val_episodes: int = Field(default=20, ge=1)
 
 
 class HPSearchConfig(BaseModel):
@@ -63,8 +66,53 @@ def build_agent(hp: Hyperparameters) -> DQNAgent:
     )
 
 
-def run_single(hp: Hyperparameters, results_root: Path):
-    out_dir = results_root / hp.name
+def run_train(
+    results_dir: Path,
+    config: Hyperparameters,
+    ask_override: bool = True,
+):
+    model_pt = results_dir / "model.pt"
+    agent = build_agent(config)
+    if model_pt.exists() and ask_override:
+        i = input("Override? [1-stop],2-load,3-override: ").strip().lower()
+        if i == "2":
+            agent.load(model_pt)
+        elif i == "1" or i != "3":
+            return
+    train(
+        agent=agent,
+        episodes=config.train_episodes,
+        seed=config.seed + TRAIN_SEED_OFFSET,
+        results_dir=results_dir,
+    )
+
+
+def run_val(results_dir: Path, config: Hyperparameters):
+    model_pt = results_dir / "model.pt"
+    agent = build_agent(config)
+    agent.load(model_pt)
+    metrics = evaluate_agent(
+        agent,
+        episodes=config.val_episodes,
+        seed=config.seed + EVAL_SEED_OFFSET,
+    )
+    metrics = EvalResults.model_validate(metrics)
+    return metrics
+
+
+def run_render(results_dir: Path, config: Hyperparameters):
+    model_pt = results_dir / "model.pt"
+    agent = build_agent(config)
+    agent.load(model_pt)
+    render_episode(
+        agent,
+        seed=config.seed + RENDER_SEED_OFFSET,
+        output_dir=results_dir / "videos",
+    )
+
+
+def run_single(results_dir: Path, config: Hyperparameters):
+    out_dir = results_dir / config.name
 
     if (out_dir / "model.pt").exists():
         return
@@ -72,20 +120,34 @@ def run_single(hp: Hyperparameters, results_root: Path):
     out_dir.mkdir(parents=True, exist_ok=True)
 
     with open(out_dir / "hyperparameters.json", "w", encoding="utf-8") as f:
-        json.dump(hp.model_dump(), f, indent=2)
+        json.dump(config.model_dump(), f, indent=2)
 
-    agent = build_agent(hp)
-    train(agent=agent, episodes=hp.episodes, seed=hp.seed, results_dir=out_dir)
+    agent = build_agent(config)
+
+    train(
+        agent=agent,
+        episodes=config.train_episodes,
+        seed=config.seed + TRAIN_SEED_OFFSET,
+        results_dir=out_dir,
+    )
 
     agent.load(out_dir / "model.pt")
-    metrics = evaluate_agent(agent, episodes=EVAL_EPISODES, seed=hp.seed + 1000)
+    metrics = evaluate_agent(
+        agent,
+        episodes=config.val_episodes,
+        seed=config.seed + EVAL_SEED_OFFSET,
+    )
 
     metrics = EvalResults.model_validate(metrics)
 
     with open(out_dir / "metrics.json", "w", encoding="utf-8") as f:
         json.dump(metrics.model_dump(), f, indent=2)
 
-    render_episode(agent, seed=hp.seed + 2000, output_dir=out_dir / "videos")
+    render_episode(
+        agent,
+        seed=config.seed + RENDER_SEED_OFFSET,
+        output_dir=out_dir / "videos",
+    )
 
     return metrics
 
@@ -101,7 +163,7 @@ def run_sweep(yaml_path: Path) -> None:
     for i, hp in enumerate(cfg.experiments, start=1):
         print(f"\n=== [{i}/{len(cfg.experiments)}] {hp.name} ===")
         try:
-            metrics = run_single(hp, root)
+            metrics = run_single(root, hp)
             print(f"\t{metrics}")
         except Exception as e:
             print(f"\tERROR!!! failed: {e}")
