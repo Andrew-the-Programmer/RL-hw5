@@ -1,0 +1,127 @@
+results_root: "results/hp_results"
+
+base: &base
+  name: base
+  seed: 42
+  gamma: 0.99
+  learning_rate: 1e-3
+  batch_size: 64
+  buffer_capacity: 100000
+  epsilon_start: 1.0
+  epsilon_end: 0.05
+  epsilon_decay: 0.9999
+  target_update_freq: 500
+  episodes: 300
+
+experiments:
+  - <<: *base
+    name: base
+
+  # 1. Epsilon
+  - <<: *base
+    name: eps_original
+    epsilon_start: 0.10
+    epsilon_end: 0.01
+    epsilon_decay: 0.995
+
+  - <<: *base
+    name: eps_start_01
+    epsilon_start: 0.10
+
+  - <<: *base
+    name: eps_decay_9995
+    epsilon_decay: 0.9995
+
+  - <<: *base
+    name: eps_decay_99995
+    epsilon_decay: 0.99995
+
+  - <<: *base
+    name: eps_end_020
+    epsilon_end: 0.20
+
+  # 2. Learning rate (Adam)
+  - <<: *base
+    name: lr_1e4
+    learning_rate: 1.0e-4
+
+  - <<: *base
+    name: lr_3e4
+    learning_rate: 3.0e-4
+
+  - <<: *base
+    name: lr_3e3
+    learning_rate: 3.0e-3
+
+  - <<: *base
+    name: lr_1e2
+    learning_rate: 1.0e-2
+
+  # 3. target_update_freq
+  - <<: *base
+    name: tuf_1
+    target_update_freq: 1
+
+  - <<: *base
+    name: tuf_100
+    target_update_freq: 100
+
+  - <<: *base
+    name: tuf_1000
+    target_update_freq: 1000
+
+  - <<: *base
+    name: tuf_2000
+    target_update_freq: 2000
+
+  # 4. gamma
+  - <<: *base
+    name: gamma_095
+    gamma: 0.95
+
+  - <<: *base
+    name: gamma_098
+    gamma: 0.98
+
+  - <<: *base
+    name: gamma_0995
+    gamma: 0.995
+
+  - <<: *base
+    name: gamma_0999
+    gamma: 0.999
+
+  # 5. buffer
+  - <<: *base
+    name: buffer_10k
+    buffer_capacity: 10000
+
+  # 6. episodes
+  - <<: *base
+    name: episodes_500
+    episodes: 500
+
+  # 7. batch
+  - <<: *base
+    name: batch_16
+    batch_size: 16
+
+  - <<: *base
+    name: batch_32
+    batch_size: 32
+
+  - <<: *base
+    name: batch_128
+    batch_size: 128
+
+  - <<: *base
+    name: batch_256
+    batch_size: 256
+
+  - <<: *base
+    name: batch_512
+    batch_size: 512
+
+  - <<: *base
+    name: batch_1024
+    batch_size: 1024
