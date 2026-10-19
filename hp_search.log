@@ -778,3 +778,37 @@
 00:10:02 Episode  300 | Reward  -148.03 | Epsilon 0.0500
 00:10:03 Saved video to results/hp_results_combination/final_d_alt_eps/videos/evaluation_episode.mp4
 00:10:03 	mean_reward=-103.44999694824219 std_reward=14.479209899902344 min_reward=-155.0 max_reward=-84.0 successes=20 episodes=20
+00:00:02 
+00:00:02 === [1/7] base ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [2/7] base_combination ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [3/7] final_a ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [4/7] final_b_conservative ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [5/7] final_c_aggressive ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [6/7] final_d_alt_eps ===
+00:00:02 	None
+00:00:02 
+00:00:02 === [7/7] final_a_lr_1e4 ===
+00:00:09 Episode   25 | Reward  -199.21 | Epsilon 0.0846
+00:00:15 Episode   50 | Reward  -207.19 | Epsilon 0.0500
+00:00:22 Episode   75 | Reward  -201.61 | Epsilon 0.0500
+00:00:29 Episode  100 | Reward  -202.50 | Epsilon 0.0500
+00:00:37 Episode  125 | Reward  -199.03 | Epsilon 0.0500
+00:00:43 Episode  150 | Reward  -199.76 | Epsilon 0.0500
+00:00:49 Episode  175 | Reward  -174.90 | Epsilon 0.0500
+00:00:54 Episode  200 | Reward  -108.47 | Epsilon 0.0500
+00:00:59 Episode  225 | Reward  -129.88 | Epsilon 0.0500
+00:01:05 Episode  250 | Reward  -132.20 | Epsilon 0.0500
+00:01:10 Episode  275 | Reward  -198.21 | Epsilon 0.0500
+00:01:14 Episode  300 | Reward  -171.55 | Epsilon 0.0500
+00:01:16 Saved video to results/hp_results_combination/final_a_lr_1e4/videos/evaluation_episode.mp4
+00:01:16 	mean_reward=-144.35000610351562 std_reward=47.53448486328125 min_reward=-200.0 max_reward=-86.0 successes=12 episodes=20

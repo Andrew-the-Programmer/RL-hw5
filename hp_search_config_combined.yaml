@@ -47,3 +47,8 @@ experiments:
     epsilon_decay: 0.9999
     target_update_freq: 100
     batch_size: 1024
+
+  - <<: *base
+    name: final_a_lr_1e4
+    epsilon_decay: 0.9995
+    learning_rate: 1e-4
